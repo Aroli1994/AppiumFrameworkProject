@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-skipped">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods,  4 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.rahulshettyacademy.eCommerce_tc_4_Hybrid" class="method navigator-link" hash-for-method="FillForm">FillForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.rahulshettyacademy.eCommerce_tc_4_Hybrid" class="method navigator-link" hash-for-method="FillForm">FillForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.rahulshettyacademy.eCommerce_tc_1" class="method navigator-link" hash-for-method="FillForm_ErrorValidation">FillForm_ErrorValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.rahulshettyacademy.eCommerce_tc_1" class="method navigator-link" hash-for-method="FillForm_Positive">FillForm_Positive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.rahulshettyacademy.IOSBasics" class="method navigator-link" hash-for-method="IOSBasicsTest">IOSBasicsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">org.rahulshettyacademy.eCommerce_tc_1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FillForm_ErrorValidation">
+                  </a> <!-- FillForm_ErrorValidation -->
+                  <span class="method-name">FillForm_ErrorValidation</span>
+                  <div class="stack-trace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m&apos;234.232.20.8&apos;[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.800s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.800s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+	at org.rahulshettyacademy.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:31)
+	at org.rahulshettyacademy.TestUtils.AndroidBaseTest.configureAppium(AndroidBaseTest.java:35)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+	... 32 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+	... 34 more
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FillForm_Positive">
+                  </a> <!-- FillForm_Positive -->
+                  <span class="method-name">FillForm_Positive</span>
+                  <div class="stack-trace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m&apos;234.232.20.8&apos;[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.800s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.800s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+	at org.rahulshettyacademy.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:31)
+	at org.rahulshettyacademy.TestUtils.AndroidBaseTest.configureAppium(AndroidBaseTest.java:35)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+	... 32 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+	... 34 more
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">org.rahulshettyacademy.eCommerce_tc_4_Hybrid</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FillForm">
+                  </a> <!-- FillForm -->
+                  <span class="method-name">FillForm</span>
+                  <div class="stack-trace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m&apos;234.232.20.8&apos;[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.942s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.943s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+	at org.rahulshettyacademy.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:31)
+	at org.rahulshettyacademy.TestUtils.AndroidBaseTest.configureAppium(AndroidBaseTest.java:35)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+	... 32 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+	... 34 more
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FillForm">
+                  </a> <!-- FillForm -->
+                  <span class="method-name">FillForm</span>
+                  <div class="stack-trace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m&apos;234.232.20.8&apos;[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.942s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.943s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+	at org.rahulshettyacademy.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:31)
+	at org.rahulshettyacademy.TestUtils.AndroidBaseTest.configureAppium(AndroidBaseTest.java:35)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+	... 32 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+	... 34 more
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.rahulshettyacademy.IOSBasics</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="IOSBasicsTest">
+                  </a> <!-- IOSBasicsTest -->
+                  <span class="method-name">IOSBasicsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/krishnabros/Desktop/Projects/Appium/eclipse-workspace/AppiumFrameworkDesignProject/testNGSuites/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.rahulshettyacademy.TestUtils.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;End to end framework test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.rahulshettyacademy.eCommerce_tc_4_Hybrid&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- End to end framework test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Error validation test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.rahulshettyacademy.eCommerce_tc_1&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Error validation test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;IOS test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.rahulshettyacademy.IOSBasics&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- IOS test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">End to end framework test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Error validation test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">IOS test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">FillForm</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'IOSBasicsTest')
+data.setCell(0, 2, 'org.rahulshettyacademy.IOSBasics')
+data.setCell(0, 3, 6023);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'FillForm')
+data.setCell(1, 2, 'org.rahulshettyacademy.eCommerce_tc_4_Hybrid')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'FillForm')
+data.setCell(2, 2, 'org.rahulshettyacademy.eCommerce_tc_4_Hybrid')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'FillForm_Positive')
+data.setCell(3, 2, 'org.rahulshettyacademy.eCommerce_tc_1')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'FillForm_ErrorValidation')
+data.setCell(4, 2, 'org.rahulshettyacademy.eCommerce_tc_1')
+data.setCell(4, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.rahulshettyacademy.eCommerce_tc_4_Hybrid</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">FillForm</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FillForm</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.rahulshettyacademy.eCommerce_tc_1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">FillForm_ErrorValidation</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FillForm_Positive</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.rahulshettyacademy.eCommerce_tc_4_Hybrid</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">configureAppium</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">preSetUp</span>
+                <span class="method-start">20166 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">preSetUp</span>
+                <span class="method-start">20168 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">20169 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.rahulshettyacademy.eCommerce_tc_1</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">configureAppium</span>
+                <span class="method-start">20341 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40365 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.rahulshettyacademy.IOSBasics</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configureAppium</span>
+                <span class="method-start">40403 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">IOSBasicsTest</span>
+                <span class="method-start">53183 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">59221 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

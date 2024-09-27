@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="1" failed="0" skipped="4">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-27T03:20:06Z" name="Suite" finished-at="2024-09-27T03:21:09Z" duration-ms="63464">
+    <groups>
+      <group name="Smoke">
+        <method signature="eCommerce_tc_4_Hybrid.FillForm(java.util.HashMap)[pri:0, instance:org.rahulshettyacademy.eCommerce_tc_4_Hybrid@27eedb64]" name="FillForm" class="org.rahulshettyacademy.eCommerce_tc_4_Hybrid"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2024-09-27T03:20:06Z" name="End to end framework test" finished-at="2024-09-27T03:20:26Z" duration-ms="20171">
+      <class name="org.rahulshettyacademy.eCommerce_tc_4_Hybrid">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:org.rahulshettyacademy.eCommerce_tc_4_Hybrid@27eedb64]" started-at="2024-09-27T03:20:06Z" name="configureAppium" finished-at="2024-09-27T03:20:26Z" duration-ms="20048" status="FAIL">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m'234.232.20.8'[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.942s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.943s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m'234.232.20.8'[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.942s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.943s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at org.rahulshettyacademy.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:31)
+at org.rahulshettyacademy.TestUtils.AndroidBaseTest.configureAppium(AndroidBaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 32 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAppium -->
+        <test-method is-config="true" signature="preSetUp()[pri:0, instance:org.rahulshettyacademy.eCommerce_tc_4_Hybrid@27eedb64]" started-at="2024-09-27T03:20:26Z" name="preSetUp" finished-at="2024-09-27T03:20:26Z" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.rahulshettyacademy.pageObjects.android.FormPage.setAppActivity()" because "this.formPage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.rahulshettyacademy.pageObjects.android.FormPage.setAppActivity()" because "this.formPage" is null
+at org.rahulshettyacademy.eCommerce_tc_4_Hybrid.preSetUp(eCommerce_tc_4_Hybrid.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetUp -->
+        <test-method signature="FillForm(java.util.HashMap)[pri:0, instance:org.rahulshettyacademy.eCommerce_tc_4_Hybrid@27eedb64]" started-at="2024-09-27T03:20:26Z" name="FillForm" data-provider="getData" finished-at="2024-09-27T03:20:26Z" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m'234.232.20.8'[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.942s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.943s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m'234.232.20.8'[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.942s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.943s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at org.rahulshettyacademy.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:31)
+at org.rahulshettyacademy.TestUtils.AndroidBaseTest.configureAppium(AndroidBaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 32 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillForm -->
+        <test-method is-config="true" signature="preSetUp()[pri:0, instance:org.rahulshettyacademy.eCommerce_tc_4_Hybrid@27eedb64]" started-at="2024-09-27T03:20:26Z" name="preSetUp" finished-at="2024-09-27T03:20:26Z" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.rahulshettyacademy.pageObjects.android.FormPage.setAppActivity()" because "this.formPage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.rahulshettyacademy.pageObjects.android.FormPage.setAppActivity()" because "this.formPage" is null
+at org.rahulshettyacademy.eCommerce_tc_4_Hybrid.preSetUp(eCommerce_tc_4_Hybrid.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetUp -->
+        <test-method signature="FillForm(java.util.HashMap)[pri:0, instance:org.rahulshettyacademy.eCommerce_tc_4_Hybrid@27eedb64]" started-at="2024-09-27T03:20:26Z" name="FillForm" data-provider="getData" finished-at="2024-09-27T03:20:26Z" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m'234.232.20.8'[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.942s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.943s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m'234.232.20.8'[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.942s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.943s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at org.rahulshettyacademy.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:31)
+at org.rahulshettyacademy.TestUtils.AndroidBaseTest.configureAppium(AndroidBaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 32 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.rahulshettyacademy.eCommerce_tc_4_Hybrid@27eedb64]" started-at="2024-09-27T03:20:26Z" name="tearDown" finished-at="2024-09-27T03:20:26Z" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.appium.java_client.android.AndroidDriver.quit()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.android.AndroidDriver.quit()" because "this.driver" is null
+at org.rahulshettyacademy.TestUtils.AndroidBaseTest.tearDown(AndroidBaseTest.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.rahulshettyacademy.eCommerce_tc_4_Hybrid -->
+    </test> <!-- End to end framework test -->
+    <test started-at="2024-09-27T03:20:26Z" name="Error validation test" finished-at="2024-09-27T03:20:46Z" duration-ms="20025">
+      <class name="org.rahulshettyacademy.eCommerce_tc_1">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:org.rahulshettyacademy.eCommerce_tc_1@7e4204e2]" started-at="2024-09-27T03:20:26Z" name="configureAppium" finished-at="2024-09-27T03:20:46Z" duration-ms="20012" status="FAIL">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m'234.232.20.8'[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.800s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.800s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m'234.232.20.8'[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.800s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.800s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at org.rahulshettyacademy.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:31)
+at org.rahulshettyacademy.TestUtils.AndroidBaseTest.configureAppium(AndroidBaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 32 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAppium -->
+        <test-method is-config="true" signature="preSetUp()[pri:0, instance:org.rahulshettyacademy.eCommerce_tc_1@7e4204e2]" started-at="2024-09-27T03:20:46Z" name="preSetUp" finished-at="2024-09-27T03:20:46Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetUp -->
+        <test-method signature="FillForm_ErrorValidation()[pri:0, instance:org.rahulshettyacademy.eCommerce_tc_1@7e4204e2]" started-at="2024-09-27T03:20:46Z" name="FillForm_ErrorValidation" finished-at="2024-09-27T03:20:46Z" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m'234.232.20.8'[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.800s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.800s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m'234.232.20.8'[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.800s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.800s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at org.rahulshettyacademy.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:31)
+at org.rahulshettyacademy.TestUtils.AndroidBaseTest.configureAppium(AndroidBaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 32 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillForm_ErrorValidation -->
+        <test-method signature="FillForm_Positive()[pri:0, instance:org.rahulshettyacademy.eCommerce_tc_1@7e4204e2]" started-at="2024-09-27T03:20:46Z" name="FillForm_Positive" finished-at="2024-09-27T03:20:46Z" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m'234.232.20.8'[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.800s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.800s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m'234.232.20.8'[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.800s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.800s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at org.rahulshettyacademy.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:31)
+at org.rahulshettyacademy.TestUtils.AndroidBaseTest.configureAppium(AndroidBaseTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 32 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillForm_Positive -->
+        <test-method is-config="true" signature="preSetUp()[pri:0, instance:org.rahulshettyacademy.eCommerce_tc_1@7e4204e2]" started-at="2024-09-27T03:20:46Z" name="preSetUp" finished-at="2024-09-27T03:20:46Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.rahulshettyacademy.eCommerce_tc_1@7e4204e2]" started-at="2024-09-27T03:20:46Z" name="tearDown" finished-at="2024-09-27T03:20:46Z" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.appium.java_client.android.AndroidDriver.quit()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.android.AndroidDriver.quit()" because "this.driver" is null
+at org.rahulshettyacademy.TestUtils.AndroidBaseTest.tearDown(AndroidBaseTest.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.rahulshettyacademy.eCommerce_tc_1 -->
+    </test> <!-- Error validation test -->
+    <test started-at="2024-09-27T03:20:46Z" name="IOS test" finished-at="2024-09-27T03:21:09Z" duration-ms="23060">
+      <class name="org.rahulshettyacademy.IOSBasics">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:org.rahulshettyacademy.IOSBasics@29a0cdb]" started-at="2024-09-27T03:20:46Z" name="configureAppium" finished-at="2024-09-27T03:20:59Z" duration-ms="12779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAppium -->
+        <test-method signature="IOSBasicsTest()[pri:0, instance:org.rahulshettyacademy.IOSBasics@29a0cdb]" started-at="2024-09-27T03:20:59Z" name="IOSBasicsTest" finished-at="2024-09-27T03:21:05Z" duration-ms="6023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IOSBasicsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.rahulshettyacademy.IOSBasics@29a0cdb]" started-at="2024-09-27T03:21:05Z" name="tearDown" finished-at="2024-09-27T03:21:09Z" duration-ms="4242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.rahulshettyacademy.IOSBasics -->
+    </test> <!-- IOS test -->
+  </suite> <!-- Suite -->
+</testng-results>

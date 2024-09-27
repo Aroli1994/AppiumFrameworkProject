@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">End to end framework test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">20,171</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Error validation test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">20,025</td><td></td><td></td></tr>
+<tr><td><a href="#t2">IOS test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">23,060</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num attn">4</th><th class="num">0</th><th class="num">63,256</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">End to end framework test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="4">org.rahulshettyacademy.eCommerce_tc_4_Hybrid</td><td><a href="#m0">configureAppium</a></td><td rowspan="1">1727407206489</td><td rowspan="1">20048</td></tr><tr class="failedeven"><td><a href="#m1">preSetUp</a></td><td rowspan="2">1727407226657</td><td rowspan="2">0</td></tr><tr class="failedeven"><td><a href="#m2">preSetUp</a></td></tr><tr class="failedeven"><td><a href="#m3">tearDown</a></td><td rowspan="1">1727407226658</td><td rowspan="1">0</td></tr><tr><th colspan="4">End to end framework test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">org.rahulshettyacademy.eCommerce_tc_4_Hybrid</td><td><a href="#m4">FillForm</a></td><td rowspan="2">1727407226657</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m5">FillForm</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Error validation test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">org.rahulshettyacademy.eCommerce_tc_1</td><td><a href="#m6">configureAppium</a></td><td rowspan="1">1727407226830</td><td rowspan="1">20012</td></tr><tr class="failedeven"><td><a href="#m7">tearDown</a></td><td rowspan="1">1727407246854</td><td rowspan="1">0</td></tr><tr><th colspan="4">Error validation test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">org.rahulshettyacademy.eCommerce_tc_1</td><td><a href="#m8">preSetUp</a></td><td rowspan="2">1727407246851</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m9">preSetUp</a></td></tr><tr><th colspan="4">Error validation test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">org.rahulshettyacademy.eCommerce_tc_1</td><td><a href="#m10">FillForm_ErrorValidation</a></td><td rowspan="1">1727407246852</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m11">FillForm_Positive</a></td><td rowspan="1">1727407246853</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">IOS test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.rahulshettyacademy.IOSBasics</td><td><a href="#m12">IOSBasicsTest</a></td><td rowspan="1">1727407259672</td><td rowspan="1">6023</td></tr></tbody>
+</table>
+<h2>End to end framework test</h2><h3 id="m0">org.rahulshettyacademy.eCommerce_tc_4_Hybrid#configureAppium</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m&apos;234.232.20.8&apos;[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.942s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.943s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+	at org.rahulshettyacademy.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:31)
+	at org.rahulshettyacademy.TestUtils.AndroidBaseTest.configureAppium(AndroidBaseTest.java:35)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+	... 32 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+	... 34 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">org.rahulshettyacademy.eCommerce_tc_4_Hybrid#preSetUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.rahulshettyacademy.pageObjects.android.FormPage.setAppActivity()&quot; because &quot;this.formPage&quot; is null
+	at org.rahulshettyacademy.eCommerce_tc_4_Hybrid.preSetUp(eCommerce_tc_4_Hybrid.java:21)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">org.rahulshettyacademy.eCommerce_tc_4_Hybrid#preSetUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.rahulshettyacademy.pageObjects.android.FormPage.setAppActivity()&quot; because &quot;this.formPage&quot; is null
+	at org.rahulshettyacademy.eCommerce_tc_4_Hybrid.preSetUp(eCommerce_tc_4_Hybrid.java:21)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">org.rahulshettyacademy.eCommerce_tc_4_Hybrid#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;io.appium.java_client.android.AndroidDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at org.rahulshettyacademy.TestUtils.AndroidBaseTest.tearDown(AndroidBaseTest.java:55)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">org.rahulshettyacademy.eCommerce_tc_4_Hybrid#FillForm</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m&apos;234.232.20.8&apos;[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.942s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.943s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+	at org.rahulshettyacademy.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:31)
+	at org.rahulshettyacademy.TestUtils.AndroidBaseTest.configureAppium(AndroidBaseTest.java:35)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+	... 32 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+	... 34 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">org.rahulshettyacademy.eCommerce_tc_4_Hybrid#FillForm</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m&apos;234.232.20.8&apos;[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.942s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.943s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+	at org.rahulshettyacademy.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:31)
+	at org.rahulshettyacademy.TestUtils.AndroidBaseTest.configureAppium(AndroidBaseTest.java:35)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+	... 32 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+	... 34 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Error validation test</h2><h3 id="m6">org.rahulshettyacademy.eCommerce_tc_1#configureAppium</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m&apos;234.232.20.8&apos;[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.800s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.800s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+	at org.rahulshettyacademy.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:31)
+	at org.rahulshettyacademy.TestUtils.AndroidBaseTest.configureAppium(AndroidBaseTest.java:35)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+	... 32 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+	... 34 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">org.rahulshettyacademy.eCommerce_tc_1#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;io.appium.java_client.android.AndroidDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at org.rahulshettyacademy.TestUtils.AndroidBaseTest.tearDown(AndroidBaseTest.java:55)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">org.rahulshettyacademy.eCommerce_tc_1#preSetUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">org.rahulshettyacademy.eCommerce_tc_1#preSetUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">org.rahulshettyacademy.eCommerce_tc_1#FillForm_ErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m&apos;234.232.20.8&apos;[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.800s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.800s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+	at org.rahulshettyacademy.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:31)
+	at org.rahulshettyacademy.TestUtils.AndroidBaseTest.configureAppium(AndroidBaseTest.java:35)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+	... 32 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+	... 34 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">org.rahulshettyacademy.eCommerce_tc_1#FillForm_Positive</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: /usr/local/bin/node, Arguments: [/usr/local/lib/node_modules/appium/build/lib/main.js, --port, 4723, --address, 234.232.20.8], Output: [38;5;112m[Appium][0m Welcome to Appium v2.11.3
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { address: [32m&apos;234.232.20.8&apos;[39m }
+[38;5;112m[Appium][0m The autodetected Appium home path: /Users/krishnabros/.appium
+[38;5;112m[Appium][0m Attempting to load driver uiautomator2...
+[38;5;112m[Appium][0m Attempting to load driver xcuitest...
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[38;5;112m[Appium][0m Requiring driver at /Users/krishnabros/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[38;5;112m[Appium][0m XCUITestDriver has been successfully loaded in 0.800s
+[38;5;112m[Appium][0m AndroidUiautomator2Driver has been successfully loaded in 0.800s
+[38;5;86m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[38;5;112m[Appium][0m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EINVAL: invalid argument 234.232.20.8:4723
+[38;5;112m[Appium][0m Error: listen EINVAL: invalid argument 234.232.20.8:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1882:21)
+    at listenInCluster (node:net:1961:12)
+    at doListen (node:net:2135:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+]
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+	at org.rahulshettyacademy.utils.AppiumUtils.startAppiumServer(AppiumUtils.java:31)
+	at org.rahulshettyacademy.TestUtils.AndroidBaseTest.configureAppium(AndroidBaseTest.java:35)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://234.232.20.8:4723/status] to be available after 20006 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+	... 32 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+	... 34 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>IOS test</h2><h3 id="m12">org.rahulshettyacademy.IOSBasics#IOSBasicsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
